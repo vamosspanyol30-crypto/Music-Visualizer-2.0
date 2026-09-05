@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'JetBrains Mono', 'Consolas', monospace;
+    background-color: #0b0e14;
+    background-image: 
+      linear-gradient(rgba(18, 24, 38, 0.4) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(18, 24, 38, 0.4) 1px, transparent 1px);
+    background-size: 40px 40px;
+    min-height: 100vh;
+  }
+}
+
+/* Custom hardware audio fader styling */
+input[type="range"].rack-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #101622;
+  height: 6px;
+  border-radius: 3px;
+  outline: none;
+  transition: all 0.15s ease;
+  border: 1px solid #162236;
+}
+
+input[type="range"].rack-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--slider-thumb, #00f2fe);
+  cursor: pointer;
+  box-shadow: 0 0 10px var(--slider-thumb, #00f2fe);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+input[type="range"].rack-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 15px var(--slider-thumb, #00f2fe);
+}
+
+/* Mini custom scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #080b11;
+}
+::-webkit-scrollbar-thumb {
+  background: #162236;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00f2fe;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "PULSE FX - Audio Visualizer & DJ Deck Studio",
+  "description": "A cyberpunk rack-mounted audio visualizer, DJ deck, and real-time DSP effects mixer with multi-mode waveform monitors and frequency analysis.",
+  "requestFramePermissions": ["microphone", "display-capture"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
